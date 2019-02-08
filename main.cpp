@@ -1,11 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /* 
- * File:   grafos.cpp
+ * File:   main.cpp
  * Author: yael
  *
  * Created on February 7, 2019, 3:08 PM
@@ -22,11 +16,19 @@
 
 using namespace std;
 
+void listaSimple();
+
 /*
  * 
  */
 int main(int argc, char** argv) {
     
+    listaSimple();
+
+    return 0;
+}
+
+void listaSimple() {
     ListaSimple * lista = new ListaSimple(); 
     char input[MAX_INPUT];
     Nodo * nuevo;
@@ -65,10 +67,4 @@ int main(int argc, char** argv) {
 
         lista->imprimir();
     }
-    
-    
-
-
-    return 0;
 }
-
